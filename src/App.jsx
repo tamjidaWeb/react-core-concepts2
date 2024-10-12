@@ -22,7 +22,8 @@ function App() {
      <button onClick={handleClick2}>Click2</button>
      <button onClick={() =>{alert('third clicked')}}>third</button>
     <button onClick={()=>{alert('fourth clicked')}}>Fourth</button>
-    {/* vejailla */}
+    {/* ve */}
+    <button onClick={()=> addToFive(3)}>Five</button>
     </>
   )
 }
