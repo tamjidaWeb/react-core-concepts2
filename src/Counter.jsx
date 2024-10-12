@@ -2,10 +2,15 @@ import { useState } from "react"
 
 export default function Counter (){
     const [count , setCount] = useState(0);
+
+    const handleAdd = () =>{
+
+    }
    
     return (
-        <div>
-            <h3>Counter:</h3>
+        <div style={{border: '2px solid yellow'}}>
+            <h3>Counter: {count}</h3>
+            <button onClick={handleAdd}>Add</button>
         </div>
     )
 }
