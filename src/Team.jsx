@@ -7,6 +7,10 @@ export default function Team(){
         const newTeam = team +1;
         setTeam(newTeam);
     }
+    const handleRemove = () =>{
+        setTeam(team -1);
+    }
+
     const teamStyle = {
         border: '2px solid purple',
         margin: '15px',
@@ -17,6 +21,7 @@ export default function Team(){
         <div style={teamStyle}>
             <h3>Players: {team} </h3>
             <button onClick={handleAdd}>Add</button>
+            <button onClick={handleRemove}>Remove</button>
         </div>
     )
 }
